@@ -193,7 +193,7 @@ PixelShader =
 			//  1) Lower vAlphaMin
 			//  2) Scale down vAlphaFill
 			// -------------------------------------------
-			float vAlphaMin = 0.0f; // was 0.1f + 0.5f * vCamDistFactor
+			float vAlphaMin = 0.5f; // was 0.1f + 0.5f * vCamDistFactor
 								
 			// Original equation: saturate( vMid + (vDist - 0.8f + vEdgeWidth*8.0f)*2.0f ) * 0.6f
 			// We'll scale it down to reduce interior color drastically:
